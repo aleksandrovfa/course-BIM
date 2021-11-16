@@ -10,21 +10,6 @@ namespace Lab_3_Homework
     {
         static void Main(string[] args)
         {
-            //int x1 = 3;
-            //int x2 = 3;
-            //int x3 = 3;
-            //if (x1 ==x2 || x2 == x3 || x3 == x1)
-            //{
-            //    Console.WriteLine("истинно");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("ложно");
-
-
-            //}
-            //Console.ReadKey();
-
             Console.WriteLine("Напишите номер задачи(доступно 1 и 3)");
             int task = Convert.ToInt32(Console.ReadLine());
             switch (task)
