@@ -10,7 +10,7 @@ namespace _4_Task
     {
         static void Main(string[] args)
         {
-            //Выбор задачи:
+            //Реализован выбор задачи, каждая задача отдельным классом.
             Console.WriteLine("Напишите номер задачи(доступно 1,2,3)");
             int task = Convert.ToInt32(Console.ReadLine());
             switch (task)
