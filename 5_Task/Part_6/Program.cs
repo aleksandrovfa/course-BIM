@@ -111,7 +111,6 @@ namespace Part_6
                 Console.WriteLine("К сожалению это не магический квадрат");
             }
             Console.ReadKey();
-
         }
     }
 }
