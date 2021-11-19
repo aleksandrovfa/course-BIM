@@ -6,7 +6,15 @@ namespace Part_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string line = Console.ReadLine();
+            string[] arr = line.Split();
+            string lengthLine = 
+            foreach (string item in arr)
+            {
+
+
+            }
+
         }
     }
 }
