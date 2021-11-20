@@ -50,7 +50,11 @@ namespace Part_1
             {
                 Console.WriteLine("Ошибка! {0}",ex.Message);
             }
-            Console.ReadKey();
+            finally
+            {
+                Console.WriteLine("Закрываюсь после нажатия клавиши");
+                Console.ReadKey();
+            }
         }
     }
 }
