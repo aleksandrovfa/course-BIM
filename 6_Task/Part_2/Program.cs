@@ -13,13 +13,17 @@ namespace Part_2
             Console.WriteLine("Ввести с клавиатуры предложение. Предложение представляет собой слова, разделенные пробелом. Знаки препинания не используются.");
             string lineRead = Console.ReadLine();
             string[] arr = lineRead.Split();
+
+
+            //Запись в строки в одну переменную String line слева направо 
             string line = null;
-            //Запись 
             foreach (string item in arr)
             {
                 line += item.ToLower();
             }
+            
 
+            //Запись в строки в одну переменную String line cправо налево
             string lineReverse = null;
             foreach (string item in arr.Reverse())
             {
@@ -31,6 +35,7 @@ namespace Part_2
                 lineReverse += word;  
             }
 
+            //Сравнение и вывод результата
             if (line == lineReverse)
             {
                 Console.WriteLine("Данное пердложение полидром");
