@@ -38,8 +38,16 @@ namespace Part_1
                         result = x * y;
                         break;
                     case 4:
-                        result = x / y;
-                        break;
+                        if (y==0)
+                        {
+                            Exception ex0 = new Exception("Деление на ноль");
+                            throw ex0;
+                        }
+                        else
+                        {
+                            result = x / y;
+                            break;
+                        }
                     default:
                         Exception ex1 = new Exception("Нет операции с указанным номером");
                         throw ex1;
