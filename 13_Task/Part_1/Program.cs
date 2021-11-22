@@ -10,10 +10,11 @@ namespace Part_1
     {
         static void Main(string[] args)
         {
-            Building building = new Building("Пушкина 20", 10, -2, 2);
+            Building building = new Building("Пушкина 20", 10, 2, 2);
             building.Print();
-            MultiBuilding multiBuilding = new MultiBuilding("Крупской 20", 45, 35, 22, 2);
+            MultiBuilding multiBuilding = new MultiBuilding("Крупской 20", 45, 0, 22, 5);
             multiBuilding.Print();
+            Console.WriteLine(multiBuilding.Level);
             Console.ReadKey();
         }
     }
@@ -33,7 +34,7 @@ namespace Part_1
                 }
                 else
                 {
-                    Console.WriteLine("Длина здание должна быть больше  0");
+                    Console.WriteLine("Ошибка! Длина здание должна быть больше  0");
                 }
             } 
             get
@@ -51,7 +52,7 @@ namespace Part_1
                 }
                 else
                 {
-                    Console.WriteLine("Ширина здание должна быть больше 0");
+                    Console.WriteLine("Ошибка! Ширина здание должна быть больше 0");
                 }
             }
             get
@@ -69,7 +70,7 @@ namespace Part_1
                 }
                 else
                 {
-                    Console.WriteLine("Длина здание должна быть больше 0");
+                    Console.WriteLine("Ошибка! Длина здание должна быть больше 0");
                 }
             }
             get
@@ -106,7 +107,7 @@ namespace Part_1
                 }
                 else
                 {
-                    Console.WriteLine("Этажность здание должна быть больше 0");
+                    Console.WriteLine("Ошибка! Этажность здание должна быть больше 0");
                 }
             }
             get
