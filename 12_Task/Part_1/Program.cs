@@ -10,14 +10,17 @@ namespace Part_1
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
-            //int[] dfsf = new int[4];
-            //double pi = Math.PI;
+            //Координаты круга , радиус , координаты точи
             double centerX = 5;
             double centerY = 0;
             double radius = 3;
             double x = 2;
             double y = 0;
+            Console.WriteLine("Радиус круга равен {0}", Math.Round(Circle.GetLength(radius),2));
+            Console.WriteLine("Радиус круга равен {0}", Math.Round(Circle.GetArea(radius),2));
+
+
+            //Определяет точка внутри круга или нет
             if (Circle.isPointInCircle(centerX, centerY, radius, x, y))
             {
                 Console.WriteLine("Точка внутри круга");
@@ -27,7 +30,6 @@ namespace Part_1
                 Console.WriteLine("Точка за пределами круга");
             }
             Console.ReadKey();
-            //Circle.isPointInCircle(centerX,centerY,radius,x,y);
         }
 
         public static class Circle
