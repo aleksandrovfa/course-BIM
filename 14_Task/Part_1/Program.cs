@@ -32,13 +32,13 @@ namespace Part_1
 
         public Animal()
         {
-            Name = "Санек"; 
+            Name = "Санек";
         }
 
         public abstract void Say();
         public void ShowInfo()
         {
-            Console.Write("Объект класса {0} с именем {1} говорит: ", GetType().Name,Name);
+            Console.Write("Объект класса {0} с именем {1} говорит: ", GetType().Name, Name);
             Say();
         }
     }
@@ -51,10 +51,11 @@ namespace Part_1
             Console.WriteLine("Гав");
         }
         public Dog(string name)
-            :base()
+            : base()
         {
             Name = name;
         }
+        //Подскажите , если я хочу использовать конструктор класса Animal, это правильное решение?
         public Dog()
             : base()
         {
