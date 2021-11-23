@@ -22,6 +22,7 @@ namespace Part_1
             cat1.ShowInfo();
 
             Console.ReadKey();
+
         }
     }
 
