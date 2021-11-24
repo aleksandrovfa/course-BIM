@@ -30,8 +30,19 @@ namespace Part_2
             string json= File.ReadAllText(path);
             Products[] products= JsonSerializer.Deserialize<Products[]>(json);
             Console.WriteLine(products.ToString());
+            double maxCoast = 0;
+            string name = "";
+            foreach (var prod in products)
+            {
+                if (prod.Coast> maxCoast)
+                {
+                    maxCoast = prod.Coast;
+                    name = prod.Name;
+                }
+
+            }
+            Console.WriteLine("Cамый дорогой продукт: {0}", name);
             Console.ReadKey();
-            
         }
         class Products
         {
