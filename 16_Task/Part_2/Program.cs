@@ -23,13 +23,13 @@ namespace Part_2
                 dir = Directory.GetParent(dir).ToString();
             }
             //директория Products.json относительно папки 16 Занятие. 
-            string path = "\\Part_1\\bin\\Debug\\Products.json";
+            string path = "\\Part_1\\Products.json";
             //Их сложение. Теоретически должно работать при нахождении папки 16 занятия в любом месте.
             path = dir + path;
 
             string json= File.ReadAllText(path);
             Products[] products= JsonSerializer.Deserialize<Products[]>(json);
-            Console.WriteLine(products.ToString());
+            
             double maxCoast = 0;
             string name = "";
             foreach (var prod in products)

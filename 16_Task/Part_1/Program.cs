@@ -15,7 +15,7 @@ namespace Part_1
         static void Main(string[] args)
         {
             
-            Product[] array = new Product[5];
+            Product[] array = new Product[1];
             for (int i = 0; i < array.Length; i++)
                 {
                     array[i] = InputProduct(i+1);
@@ -26,7 +26,20 @@ namespace Part_1
                 Encoder =JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
             };
             string json = JsonSerializer.Serialize<Product[]>(array,options);
-            string path = "Products.json";
+
+            //директория данного файла
+            string dir = Environment.CurrentDirectory;
+
+            //директория на 3 папки выше
+            for (int i = 0; i < 2; i++)
+            {
+                dir = Directory.GetParent(dir).ToString();
+            }
+             
+            string path = "\\Products.json";
+
+            path = "Products.json";
+            path = dir + "\\" + path;
             File.WriteAllText(path, json);
 
             Console.WriteLine(json);
