@@ -14,11 +14,12 @@ namespace Part_1
     {
         static void Main(string[] args)
         {
-            Product[] array= new Product[2];
+            
+            Product[] array = new Product[5];
             for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = InputProduct(i+1);
-            }
+                {
+                    array[i] = InputProduct(i+1);
+                }
 
             JsonSerializerOptions options = new JsonSerializerOptions()
             {
