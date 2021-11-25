@@ -26,9 +26,7 @@ namespace Part_1
             check2.Print();
 
             Console.ReadKey();
-
         }
-
     }
     class Check<T>
     {
