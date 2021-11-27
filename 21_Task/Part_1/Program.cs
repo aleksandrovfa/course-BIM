@@ -20,6 +20,7 @@ namespace Part_1
             myThread.Start();
             Gardener1();
 
+
             Console.WriteLine("Вывод участка: 1-первый садовник , 2-второй садовник");
             int gardener1 = 0;
             int gardener2 = 0;
