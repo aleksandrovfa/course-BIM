@@ -11,7 +11,7 @@ namespace Part_1
         static void Main(string[] args)
         {
             //string line = "({()})))";
-            string line = "([]{})[]";
+            string line = "{([]())}";
 
             Stack<char> stackSymbols = new Stack<char>();
 
@@ -35,6 +35,11 @@ namespace Part_1
                             if (stackSymbols.Peek() == i)
                             {
                                 stackSymbols.Pop();
+                            }
+                            else
+                            {
+                                Exception ex = new Exception("НЕкорректно  расставлены скобки");
+                                throw ex;
                             }
                             break;
                     }
